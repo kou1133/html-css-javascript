@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせフォーム</title>
+</head>
+<body>
+    <h1>お問い合わせフォーム</h1>
+    <dl>
+        <form action="#" method="POST">
+            <dt><label for="username">お名前</label></dt>
+            <dd>
+                <input id="username" type="text" name="username">
+            </dd>
+            <br>
+            <dt><label for="mailaddress">メールアドレス</label></dt>
+            <dd>
+                <input id="mailaddress" type="email" name="mailaddress">
+            </dd>
+            <br>
+            <dt><label for="area">お住まい地域</label></dt>
+            <dd>
+                <select id="area" name="area" name="area">
+                    <option value="0" selected>選択してください</option>
+                    <option value="1">東京都</option>
+                    <option value="2">埼玉県</option>
+                    <option value="3">神奈川県</option>
+                    <option value="4">茨城県</option>
+                    <option value="5">栃木県</option>
+                    <option value="6">群馬県</option>
+                    <option value="7">千葉県</option>
+                    <option value="8">大阪府</option>
+                    <option value="9">愛知県</option>
+                    <option value="10">福岡県</option>
+                </select>
+            </dd>
+            <br>
+            <dt><label for="sex">性別</label></dt>
+            <dd>
+                <input id="sex" type="radio" name="sex" value="male" checked>男性
+                <input id="sex" type="radio" name="sex" value="female">女性
+            </dd>
+            <br>
+            <dt><label for="contents">お問い合わせ</label></dt>
+            <dd>
+                <textarea id="contents" name="contents" rows="10"></textarea>
+            </dd>
+            <br>
+            <dt><label for="agree">プライバシーポリシーに同意する</label></dt>
+            <dd>
+                <input id="agree" type="checkbox" name="agree">
+            </dd>
+            <br>
+            <input type="submit" name="submit" value="送信">
+        </form>
+    </dl>
+</body>
+</html>
